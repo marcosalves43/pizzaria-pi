@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saborosa Pizzas — Peça Agora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="imagens/logo_saborosa_pizza.png" alt="Logo Saborosa Pizzas" class="logo-img"/>
+      <span class="logo-nome">Saborosa Pizzas</span>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-foto">
+      <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1800&q=85" alt="Pizza artesanal"/>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-corpo">
+      <span class="hero-eyebrow">Patos de Minas · MG</span>
+
+      <h1 class="hero-titulo">
+        Como deseja<br>
+        <em>ser atendido?</em>
+      </h1>
+
+      <p class="hero-subtitulo">
+        Escolha a forma que mais te agrada e receba sua pizza fresquinha em até 45 minutos.
+      </p>
+
+      <div class="atendimento-wrap">
+        <a href="#" class="atend-card destaque">
+          <div class="icone"><i class="ti ti-shopping-bag"></i></div>
+          <div class="titulo">Pedido Online</div>
+          <div class="desc">Pelo sistema web</div>
+        </a>
+
+        <a href="https://wa.me/5534992247103" target="_blank" class="atend-card">
+          <div class="icone"><i class="ti ti-brand-whatsapp"></i></div>
+          <div class="titulo">Pedir pelo WhatsApp</div>
+          <div class="desc">Fale com um atendente</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="como-funciona">
+      <div class="secao-topo">
+        <span class="secao-label">Simples e rápido</span>
+        <h2 class="secao-titulo">Como é fácil pedir</h2>
+      </div>
+
+      <div class="passos">
+        <div class="passo">
+          <div class="passo-num">1</div>
+          <div class="passo-titulo">Escolha o jeito</div>
+          <p class="passo-desc">Online ou WhatsApp — você decide como prefere.</p>
+        </div>
+
+        <div class="passo">
+          <div class="passo-num">2</div>
+          <div class="passo-titulo">Faça seu pedido</div>
+          <p class="passo-desc">Escolha suas pizzas favoritas e as bebidas.</p>
+        </div>
+
+        <div class="passo">
+          <div class="passo-num">3</div>
+          <div class="passo-titulo">Receba em casa</div>
+          <p class="passo-desc">Em até 45 minutos fresquinha na sua porta.</p>
+        </div>
+      </div>
+    </section>
+    <section class="diferenciais">
+      <div class="dif-item">
+        <i class="ti ti-bike"></i>
+        <strong>Delivery Rápido</strong>
+        <span>Em até 45 minutos</span>
+      </div>
+      <div class="dif-item">
+        <i class="ti ti-flame"></i>
+        <strong>Massa Artesanal</strong>
+        <span>Fermentada por 24h</span>
+      </div>
+      <div class="dif-item">
+        <i class="ti ti-salad"></i>
+        <strong>Ingredientes Frescos</strong>
+        <span>Selecionados diariamente</span>
+      </div>
+    </section>
+    <section class="localizacao">
+      <div class="loc-grid">
+
+        <div class="loc-info">
+          <span class="secao-label">Onde nos encontrar</span>
+          <h2 class="loc-titulo">Nossa<br>Localização</h2>
+          <p class="loc-desc">
+            Estamos no bairro Nossa Senhora Aparecida, em Patos de Minas. Venha buscar no balcão ou faça seu pedido para entrega.
+          </p>
+
+          <div class="loc-detalhes">
+            <div class="detalhe">
+              <div class="detalhe-icon"><i class="ti ti-map-pin"></i></div>
+              <div class="detalhe-texto">
+                <strong>Endereço</strong>
+                <span>Rua Antônio Amâncio Filho, 619<br>Nossa Senhora Aparecida — Patos de Minas, MG</span>
+              </div>
+            </div>
+
+            <div class="detalhe">
+              <div class="detalhe-icon"><i class="ti ti-phone"></i></div>
+              <div class="detalhe-texto">
+                <strong>Telefone / WhatsApp</strong>
+                <span>(34) 99224-7103</span>
+              </div>
+            </div>
+
+            <div class="detalhe">
+              <div class="detalhe-icon"><i class="ti ti-clock"></i></div>
+              <div class="detalhe-texto">
+                <strong>Horário de Funcionamento</strong>
+                <span>
+                  Ter–Sáb: 18h às 23h<br>
+                  Domingo: 18h às 22h<br>
+                  Segunda: <em style="color:#dc2626">Fechado</em>
+                </span>
+              </div>
+            </div>
+            <div class="detalhe" style="padding-top:4px">
+              <div class="detalhe-icon"><i class="ti ti-info-circle"></i></div>
+              <div class="detalhe-texto">
+                <strong>Situação agora</strong>
+                <span id="status-agora">Verificando…</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="loc-botoes">
+            <a href="https://wa.me/5534992247103" target="_blank" class="btn-loc">
+              <i class="ti ti-brand-whatsapp"></i> Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="mapa-wrap">
+          <div class="mapa-loading" id="mapa-loading">
+            <i class="ti ti-map-pin"></i>
+            <span>Localizando endereço…</span>
+          </div>
+          <iframe id="mapa" title="Localização Saborosa Pizzas" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© 2026 Saborosa Pizzas — Patrocínio, MG</p>
+    <span class="footer-pizza">🍕</span>
+    <p>Feito com carinho para facilitar seu pedido</p>
+  </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
