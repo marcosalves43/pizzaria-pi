@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saborosa Pizzas — Peça Agora</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
+
 <body>
   <nav class="navbar">
     <div class="nav-logo">
-      <img src="imagens/logo_saborosa_pizza.png" alt="Logo Saborosa Pizzas" class="logo-img"/>
+      <img src="imagens/logo_saborosa_pizza.png" alt="Logo Saborosa Pizzas" class="logo-img" />
       <span class="logo-nome">Saborosa Pizzas</span>
     </div>
   </nav>
   <section class="hero">
     <div class="hero-foto">
-      <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1800&q=85" alt="Pizza artesanal"/>
+      <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1800&q=85" alt="Pizza artesanal" />
       <div class="hero-overlay"></div>
     </div>
 
@@ -100,7 +107,8 @@
           <span class="secao-label">Onde nos encontrar</span>
           <h2 class="loc-titulo">Nossa<br>Localização</h2>
           <p class="loc-desc">
-            Estamos no bairro Nossa Senhora Aparecida, em Patos de Minas. Venha buscar no balcão ou faça seu pedido para entrega.
+            Estamos no bairro Nossa Senhora Aparecida, em Patos de Minas. Venha buscar no balcão ou faça seu pedido para
+            entrega.
           </p>
 
           <div class="loc-detalhes">
@@ -146,12 +154,13 @@
             </a>
           </div>
         </div>
+
         <div class="mapa-wrap">
           <div class="mapa-loading" id="mapa-loading">
             <i class="ti ti-map-pin"></i>
             <span>Localizando endereço…</span>
           </div>
-          <iframe id="mapa" title="Localização Saborosa Pizzas" allowfullscreen loading="lazy"></iframe>
+          <div id="map" class="map"></div>
         </div>
 
       </div>
@@ -162,6 +171,8 @@
     <span class="footer-pizza">🍕</span>
     <p>Feito com carinho para facilitar seu pedido</p>
   </footer>
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/init.js"></script>
 </body>
+
 </html>
