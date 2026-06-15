@@ -455,32 +455,59 @@
       line-height: 1.5;
     }
 
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .5px;
-    }
-    .status-badge.aberto {
-      background: rgba(34,197,94,.12);
-      color: #16a34a;
-      border: 1px solid rgba(34,197,94,.3);
-    }
-    .status-badge.fechado {
-      background: rgba(239,68,68,.10);
-      color: #dc2626;
-      border: 1px solid rgba(239,68,68,.25);
-    }
-    .status-dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-    }
-    .aberto .status-dot { background: #16a34a; }
-    .fechado .status-dot { background: #dc2626; }
+
+   .aviso-fechado {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  background: #dc2626;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.oculto {
+  display: none;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.aberto {
+  background: rgba(34,197,94,.12);
+  color: #16a34a;
+}
+
+.status-badge.fechado {
+  background: rgba(239,68,68,.12);
+  color: #dc2626;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.aberto .status-dot {
+  background: #16a34a;
+}
+
+.fechado .status-dot {
+  background: #dc2626;
+}
 
     .loc-botoes {
       margin-top: 16px;
